@@ -1,0 +1,1 @@
+docker-compose -p proba19-java up -d

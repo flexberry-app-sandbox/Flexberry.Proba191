@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proba19-сотрудники-e",
+  "editForm": "i-i-s-proba19-сотрудники-e",
+  "external": false,
+  "caption": "Сотрудники",
+  "name": "IISProba19СотрудникиL",
+  "className": "СотрудникиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba19-сотрудники",
+      "modelProjection": "СотрудникиL"
+    }
+  ]
+}

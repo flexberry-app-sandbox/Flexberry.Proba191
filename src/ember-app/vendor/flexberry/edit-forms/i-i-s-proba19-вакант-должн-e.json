@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Вакант должн",
+  "name": "IISProba19ВакантДолжнE",
+  "className": "ВакантДолжнE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba19-вакант-должн",
+      "modelProjection": "ВакантДолжнE"
+    }
+  ]
+}

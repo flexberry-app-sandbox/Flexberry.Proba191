@@ -1,0 +1,127 @@
+﻿{
+  "name": "IISProba19Сотрудники",
+  "modelName": "i-i-s-proba19-сотрудники",
+  "className": "Сотрудники",
+  "nameSpace": "IIS.Proba19",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iDСотр",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фИОСотруд",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "должнСотр",
+      "relatedTo": "i-i-s-proba19-должн-сотр",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СотрудникиE",
+      "modelName": "i-i-s-proba19-сотрудники",
+      "attrs": [
+        {
+          "name": "фИОСотруд",
+          "caption": "Ф и о сотруд",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDСотр",
+          "caption": "I d сотр",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Должность",
+          "lookupValueField": "должность",
+          "relationName": "ДолжнСотр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "должность",
+              "caption": "Должность",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Должн сотр",
+          "name": "должнСотр",
+          "relatedTo": "i-i-s-proba19-должн-сотр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СотрудникиL",
+      "modelName": "i-i-s-proba19-сотрудники",
+      "attrs": [
+        {
+          "name": "фИОСотруд",
+          "caption": "Ф и о сотруд",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "iDСотр",
+          "caption": "I d сотр",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ДолжнСотр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "должность",
+              "caption": "Должность",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Должность",
+          "name": "должнСотр",
+          "relatedTo": "i-i-s-proba19-должн-сотр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

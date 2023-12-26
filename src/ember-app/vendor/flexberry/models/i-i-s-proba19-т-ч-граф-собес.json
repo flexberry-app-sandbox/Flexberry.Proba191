@@ -1,0 +1,110 @@
+﻿{
+  "name": "IISProba19ТЧГрафСобес",
+  "modelName": "i-i-s-proba19-т-ч-граф-собес",
+  "className": "ТЧГрафСобес",
+  "nameSpace": "IIS.Proba19",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "планирСобес",
+      "relatedTo": "i-i-s-proba19-планир-собес",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "графСобес",
+      "relatedTo": "i-i-s-proba19-граф-собес",
+      "inverse": "тЧГрафСобес"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧГрафСобесE",
+      "modelName": "i-i-s-proba19-т-ч-граф-собес",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ПланирСобес",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ПланирСобес.РегистАнкеты",
+              "belongsTo": [
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "ПланирСобес.РегистАнкеты.ВакантДолжн",
+                  "belongsTo": [],
+                  "hidden": false,
+                  "attrs": [
+                    {
+                      "name": "должности",
+                      "caption": "Вакантная должность",
+                      "hidden": false,
+                      "index": 2
+                    }
+                  ],
+                  "index": -1,
+                  "type": null,
+                  "caption": "",
+                  "name": "вакантДолжн",
+                  "relatedTo": "i-i-s-proba19-вакант-должн",
+                  "inverse": null
+                }
+              ],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "фИОКандидата",
+                  "caption": "ФИО",
+                  "hidden": false,
+                  "index": 1
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "регистАнкеты",
+              "relatedTo": "i-i-s-proba19-регист-анкеты",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "датаПланСобес",
+              "caption": "Дата Планирования Собеседования",
+              "hidden": false,
+              "index": 0
+            },
+            {
+              "name": "иметьПриСебе",
+              "caption": "Иметь при себе",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "default",
+          "caption": "Дата Планирования Собеседования",
+          "name": "планирСобес",
+          "relatedTo": "i-i-s-proba19-планир-собес",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

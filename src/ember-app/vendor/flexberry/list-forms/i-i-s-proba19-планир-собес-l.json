@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proba19-планир-собес-e",
+  "editForm": "i-i-s-proba19-планир-собес-e",
+  "external": false,
+  "caption": "Планир собес",
+  "name": "IISProba19ПланирСобесL",
+  "className": "ПланирСобесL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba19-планир-собес",
+      "modelProjection": "ПланирСобесL"
+    }
+  ]
+}

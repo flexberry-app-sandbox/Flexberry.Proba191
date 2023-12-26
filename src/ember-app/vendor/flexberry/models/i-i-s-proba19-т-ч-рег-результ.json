@@ -1,0 +1,107 @@
+﻿{
+  "name": "IISProba19ТЧРегРезульт",
+  "modelName": "i-i-s-proba19-т-ч-рег-результ",
+  "className": "ТЧРегРезульт",
+  "nameSpace": "IIS.Proba19",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "итогСобес",
+      "type": "i-i-s-proba19-итог-собес",
+      "flexberryType": "ИтогСобес",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "крКомИлиОбсРеш",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "оценкаКандид",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-proba19-сотрудники",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "регРезульт",
+      "relatedTo": "i-i-s-proba19-рег-результ",
+      "inverse": "тЧРегРезульт"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧРегРезультE",
+      "modelName": "i-i-s-proba19-т-ч-рег-результ",
+      "attrs": [
+        {
+          "name": "итогСобес",
+          "caption": "Итог собес",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "оценкаКандид",
+          "caption": "Оценка кандид",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "крКомИлиОбсРеш",
+          "caption": "Кр ком или обс реш",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИОСотруд",
+          "lookupValueField": "фИОСотруд",
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОСотруд",
+              "caption": "Ф и о сотруд",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Сотрудники",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-proba19-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

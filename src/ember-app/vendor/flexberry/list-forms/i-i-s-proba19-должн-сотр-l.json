@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proba19-должн-сотр-e",
+  "editForm": "i-i-s-proba19-должн-сотр-e",
+  "external": false,
+  "caption": "Должн сотр",
+  "name": "IISProba19ДолжнСотрL",
+  "className": "ДолжнСотрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba19-должн-сотр",
+      "modelProjection": "ДолжнСотрL"
+    }
+  ]
+}

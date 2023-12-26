@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proba19-граф-собес-e",
+  "editForm": "i-i-s-proba19-граф-собес-e",
+  "external": false,
+  "caption": "Граф собес",
+  "name": "IISProba19ГрафСобесL",
+  "className": "ГрафСобесL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba19-граф-собес",
+      "modelProjection": "ГрафСобесL"
+    }
+  ]
+}

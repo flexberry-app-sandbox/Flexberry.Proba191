@@ -1,0 +1,169 @@
+﻿{
+  "name": "IISProba19РегРезульт",
+  "modelName": "i-i-s-proba19-рег-результ",
+  "className": "РегРезульт",
+  "nameSpace": "IIS.Proba19",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датРегРезСобес",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-proba19-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "планирСобес",
+      "relatedTo": "i-i-s-proba19-планир-собес",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тЧРегРезульт",
+      "relatedTo": "i-i-s-proba19-т-ч-рег-результ",
+      "inverse": "регРезульт"
+    }
+  ],
+  "projections": [
+    {
+      "name": "РегРезультE",
+      "modelName": "i-i-s-proba19-рег-результ",
+      "attrs": [
+        {
+          "name": "датРегРезСобес",
+          "caption": "Дат рег рез собес",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ИметьПриСебе",
+          "lookupValueField": "иметьПриСебе",
+          "relationName": "ПланирСобес",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "иметьПриСебе",
+              "caption": "Иметь при себе",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Планир собес",
+          "name": "планирСобес",
+          "relatedTo": "i-i-s-proba19-планир-собес",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-proba19-организация",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ТЧРегРезультE",
+          "caption": "Т ч рег результ",
+          "name": "тЧРегРезульт",
+          "relatedTo": "i-i-s-proba19-т-ч-рег-результ",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "РегРезультL",
+      "modelName": "i-i-s-proba19-рег-результ",
+      "attrs": [
+        {
+          "name": "датРегРезСобес",
+          "caption": "Дат рег рез собес",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ПланирСобес",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "иметьПриСебе",
+              "caption": "Иметь при себе",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Иметь при себе",
+          "name": "планирСобес",
+          "relatedTo": "i-i-s-proba19-планир-собес",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "организация",
+          "relatedTo": "i-i-s-proba19-организация",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

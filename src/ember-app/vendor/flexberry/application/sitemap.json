@@ -1,0 +1,71 @@
+﻿{
+  "applicationCaption": "Proba19",
+  "applicationTitle": "Proba19",
+  "items": [
+    {
+      "link": null,
+      "menuName": "proba19",
+      "caption": "Proba19",
+      "title": "Proba19",
+      "children": [
+        {
+          "link": "i-i-s-proba19-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-proba19-должн-сотр-l",
+          "menuName": null,
+          "caption": "Должн сотр",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-proba19-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-proba19-планир-собес-l",
+          "menuName": null,
+          "caption": "Планир собес",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-proba19-граф-собес-l",
+          "menuName": null,
+          "caption": "Граф собес",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-proba19-рег-результ-l",
+          "menuName": null,
+          "caption": "Рег результ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-proba19-вакант-должн-l",
+          "menuName": null,
+          "caption": "Вакант должн",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-proba19-регист-анкеты-l",
+          "menuName": null,
+          "caption": "Регист анкеты",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

@@ -1,0 +1,44 @@
+﻿{
+  "name": "IISProba19ГрафСобес",
+  "modelName": "i-i-s-proba19-граф-собес",
+  "className": "ГрафСобес",
+  "nameSpace": "IIS.Proba19",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "тЧГрафСобес",
+      "relatedTo": "i-i-s-proba19-т-ч-граф-собес",
+      "inverse": "графСобес"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ГрафСобесE",
+      "modelName": "i-i-s-proba19-граф-собес",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ТЧГрафСобесE",
+          "caption": "График собеседований",
+          "name": "тЧГрафСобес",
+          "relatedTo": "i-i-s-proba19-т-ч-граф-собес",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ГрафСобесL",
+      "modelName": "i-i-s-proba19-граф-собес",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

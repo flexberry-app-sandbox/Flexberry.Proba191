@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Организация",
+      "projection": "ОрганизацияL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "РегистАнкеты",
+      "projection": "РегистАнкетыL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Планир собес",
+  "name": "IISProba19ПланирСобесE",
+  "className": "ПланирСобесE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba19-планир-собес",
+      "modelProjection": "ПланирСобесE"
+    }
+  ]
+}

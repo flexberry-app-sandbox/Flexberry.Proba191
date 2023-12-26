@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ДолжнСотр",
+      "projection": "ДолжнСотрL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Сотрудники",
+  "name": "IISProba19СотрудникиE",
+  "className": "СотрудникиE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba19-сотрудники",
+      "modelProjection": "СотрудникиE"
+    }
+  ]
+}

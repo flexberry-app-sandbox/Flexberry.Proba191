@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Должн сотр",
+  "name": "IISProba19ДолжнСотрE",
+  "className": "ДолжнСотрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba19-должн-сотр",
+      "modelProjection": "ДолжнСотрE"
+    }
+  ]
+}

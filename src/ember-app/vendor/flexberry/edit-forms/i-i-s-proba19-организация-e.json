@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Организация",
+  "name": "IISProba19ОрганизацияE",
+  "className": "ОрганизацияE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proba19-организация",
+      "modelProjection": "ОрганизацияE"
+    }
+  ]
+}

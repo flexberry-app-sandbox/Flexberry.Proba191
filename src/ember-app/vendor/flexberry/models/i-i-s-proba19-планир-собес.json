@@ -1,0 +1,176 @@
+﻿{
+  "name": "IISProba19ПланирСобес",
+  "modelName": "i-i-s-proba19-планир-собес",
+  "className": "ПланирСобес",
+  "nameSpace": "IIS.Proba19",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаПланСобес",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "иметьПриСебе",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-proba19-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "регистАнкеты",
+      "relatedTo": "i-i-s-proba19-регист-анкеты",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПланирСобесE",
+      "modelName": "i-i-s-proba19-планир-собес",
+      "attrs": [
+        {
+          "name": "датаПланСобес",
+          "caption": "Дата план собес",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "иметьПриСебе",
+          "caption": "Иметь при себе",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-proba19-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ФИОКандидата",
+          "lookupValueField": "фИОКандидата",
+          "relationName": "РегистАнкеты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОКандидата",
+              "caption": "Ф и о кандидата",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Регист анкеты",
+          "name": "регистАнкеты",
+          "relatedTo": "i-i-s-proba19-регист-анкеты",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ПланирСобесL",
+      "modelName": "i-i-s-proba19-планир-собес",
+      "attrs": [
+        {
+          "name": "датаПланСобес",
+          "caption": "Дата план собес",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "иметьПриСебе",
+          "caption": "Иметь при себе",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "организация",
+          "relatedTo": "i-i-s-proba19-организация",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "РегистАнкеты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИОКандидата",
+              "caption": "Ф и о кандидата",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Ф и о кандидата",
+          "name": "регистАнкеты",
+          "relatedTo": "i-i-s-proba19-регист-анкеты",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
